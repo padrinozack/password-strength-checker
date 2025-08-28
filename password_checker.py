@@ -1,0 +1,1 @@
+﻿print("Password tool runs!")
