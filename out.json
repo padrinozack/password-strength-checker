@@ -1,0 +1,81 @@
+[
+  {
+    "password": "\ufeff123456",
+    "score": 0,
+    "entropy_bits": 23.3,
+    "verdict": "VERY WEAK",
+    "findings": [
+      "\u2013 Too short: 7 (need +5 to reach 12)",
+      "\u2013 Low variety: only 1 class(es)",
+      "\u2013 Sequential pattern detected (e.g., 'abcd'/'1234')",
+      "\u2013 Keyboard run detected (e.g., 'qwerty')"
+    ],
+    "suggestions": [
+      "Use 14\u201316+ characters.",
+      "Include upper, lower, digits, and symbols.",
+      "Avoid sequences/keyboard runs; shuffle components."
+    ],
+    "warnings": [
+      "Increase length to 14\u201316 for better resilience.",
+      "Add missing types (upper/lower/digit/special).",
+      "Avoid straight sequences; interleave symbols.",
+      "Avoid keyboard runs; randomize positions."
+    ]
+  },
+  {
+    "password": "Password1",
+    "score": 0,
+    "entropy_bits": 53.6,
+    "verdict": "VERY WEAK",
+    "findings": [
+      "\u2013 Too short: 9 (need +3 to reach 12)",
+      "\u2713 Character variety (lower, upper, digit)",
+      "\u00d7 In common-passwords list (high risk)",
+      "\u2013 Contains dictionary word: 'password'"
+    ],
+    "suggestions": [
+      "Use 14\u201316+ characters.",
+      "Include upper, lower, digits, and symbols.",
+      "Break dictionary words or use multi-word passphrases with separators.",
+      "Start from a unique base phrase \u2014 avoid common lists."
+    ],
+    "warnings": [
+      "Increase length to 14\u201316 for better resilience.",
+      "Pick something unique; avoid top leaked passwords.",
+      "Break dictionary words (substitute characters or use passphrases)."
+    ]
+  },
+  {
+    "password": "Summer2025!",
+    "score": 31,
+    "entropy_bits": 71.8,
+    "verdict": "WEAK",
+    "findings": [
+      "\u2013 Too short: 11 (need +1 to reach 12)",
+      "\u2713 Character variety (lower, upper, digit, special)",
+      "\u2013 Contains dictionary word: 'summer'",
+      "\u2013 Year-like pattern detected"
+    ],
+    "suggestions": [
+      "Use 14\u201316+ characters.",
+      "Break dictionary words or use multi-word passphrases with separators."
+    ],
+    "warnings": [
+      "Increase length to 14\u201316 for better resilience.",
+      "Break dictionary words (substitute characters or use passphrases).",
+      "Avoid using years or dates."
+    ]
+  },
+  {
+    "password": "Th!sIs@LongerP@ssw0rd",
+    "score": 79,
+    "entropy_bits": 137.0,
+    "verdict": "STRONG",
+    "findings": [
+      "\u2713 Length OK (21/12)",
+      "\u2713 Character variety (lower, upper, digit, special)"
+    ],
+    "suggestions": [],
+    "warnings": []
+  }
+]
